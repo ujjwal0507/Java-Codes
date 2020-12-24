@@ -1,7 +1,3 @@
-import java.io.*;
-import java.lang.*;
-import java.util.*;
-
 public class DynamicStack{
     int CAPACITY;
     int top = 0;
@@ -32,6 +28,6 @@ public class DynamicStack{
 
     public void shrink(){
         int temp[] = new int[CAPACITY];
-        
+        temp[0] = 1;
     }
 }

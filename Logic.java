@@ -1,5 +1,4 @@
 import java.io.*;
-import java.lang.*;
 
 public class Logic{
 	public static void main(String[] agrs) throws IOException{

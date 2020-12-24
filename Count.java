@@ -30,5 +30,6 @@ class Count
         System.out.println("Upper case letters : " + upper); 
         System.out.println("Number : " + number); 
         System.out.println("Special characters : " + special); 
+        in.close();
     } 
 } 

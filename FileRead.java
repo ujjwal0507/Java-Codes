@@ -1,6 +1,4 @@
 import java.io.*;
-import java.lang.*;
-import java.util.*;
 
 public class FileRead {
     public static void main(String[] args) throws IOException, FileNotFoundException{
@@ -29,6 +27,7 @@ public class FileRead {
                 }
             }
         }
+        in.close();
         System.out.println("Number of Lower Case Letters: "+cl);
         System.out.println("Number of Upper Case Letters: "+cu);
         System.out.println("Number of Whitespaces: "+cw);

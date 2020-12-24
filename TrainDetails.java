@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 
 public class TrainDetails {
     String no, name, source, dest;
@@ -21,6 +20,7 @@ public class TrainDetails {
         dest = sc.nextLine();
         System.out.print("Enter the Distance: ");
         dist = sc.nextInt();
+        sc.close();
     }
 
     public void print(){
@@ -61,6 +61,7 @@ public class TrainDetails {
         for(TrainDetails ob: list){
             ob.print();
         }
+        sc.close();
     }
 }
 
