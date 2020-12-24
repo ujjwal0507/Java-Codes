@@ -7,12 +7,7 @@ public class Solution {
     static StringTokenizer st;
 
     public static void test_cases() throws IOException{ 
-        int n = readInt();
-        for(int i=0;i<n;i++){
-            System.out.println(i);
-        }
-        String name = readLine();
-        System.out.println("Hello "+name);
+        
     }
  
     public static void main(String[] args) throws IOException {
