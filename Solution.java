@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.*;
+
+import javax.swing.plaf.ToolBarUI;
  
 public class Solution {
  
@@ -7,13 +9,28 @@ public class Solution {
     static StringTokenizer st;
 
     public static void test_cases() throws IOException{ 
-        
+        String word = readLine().toLowerCase();
+        String ans = "";
+        Set<Character> vowelsSet = new HashSet<>();
+        vowelsSet.add('a');
+        vowelsSet.add('e');
+        vowelsSet.add('i');
+        vowelsSet.add('o');
+        vowelsSet.add('u');
+        vowelsSet.add('y');
+        for(char ch: word.toCharArray()){
+            if(vowelsSet.contains(ch)){
+                continue;
+            }
+            ans = ans+'.'+ch;
+        }
+        System.out.println(ans);
     }
  
     public static void main(String[] args) throws IOException {
         in = new BufferedReader(new InputStreamReader(System.in));
-        //int  t = 1;
-        int t = readInt();
+        int  t = 1;
+        // int t = readInt();
         while(t-->0){
             test_cases();
         }
