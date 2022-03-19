@@ -9,22 +9,16 @@ public class Solution {
     static StringTokenizer st;
 
     public static void test_cases() throws IOException{ 
-        String word = readLine().toLowerCase();
-        String ans = "";
-        Set<Character> vowelsSet = new HashSet<>();
-        vowelsSet.add('a');
-        vowelsSet.add('e');
-        vowelsSet.add('i');
-        vowelsSet.add('o');
-        vowelsSet.add('u');
-        vowelsSet.add('y');
-        for(char ch: word.toCharArray()){
-            if(vowelsSet.contains(ch)){
-                continue;
-            }
-            ans = ans+'.'+ch;
-        }
-        System.out.println(ans);
+        Set<List<Integer>> set = new HashSet<>();
+
+        set.add(Arrays.asList(1,2));
+        set.add(Arrays.asList(1,2));
+        
+        System.out.println(set);
+    }
+
+    public static long nc2(long n){
+        return n*(n-1)/2;
     }
  
     public static void main(String[] args) throws IOException {

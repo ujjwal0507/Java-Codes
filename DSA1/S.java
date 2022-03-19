@@ -1,11 +1,26 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class S{
     public static void main(String[] args)throws IOException{
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(in.readLine());
-        while(t-->0){
-            
-        }
+        
+        List<List<Integer>> ans = new ArrayList<>();
+
+        List<Integer> temp = new ArrayList<>();
+
+        temp.add(1);
+        temp.add(2);
+
+        ans.add(temp);
+
+        temp = new ArrayList<>();
+        temp.add(3);
+        temp.add(4);
+
+        ans.add(temp);
+
+        System.out.println(ans);
+
     }
 }
